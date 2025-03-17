@@ -155,4 +155,14 @@ price
 ```
 here what i did is i made the work smaller focusing on a small part . so i first grab the div with the class name and theree are more then 1 p tag in the div so i jus tused find() tag and got the price
 
+lets get the image url
+it is may be easiest part as there is only one image per article we can easly get it by find()
 
+but wait they are incomplete url you will need to add the website link at the beggenign
+
+```py
+image_url =f'{website}{book.find('img')['src']}'
+image_url
+```
+
+lets look i f my product is avail avble to not to do that we can just get to that particular div and get the tag and inside the text
